@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+/* All */
+* { font-family: 'Libre Franklin', sans-serif; }
+
+/*  Color palette */
+.black { background: #000000; }
+.dark-blue { background: #1B345B; }
+.light-blue { background: #125694; }
+.dark-yellow { background: #F5AC17; }
+.white { background: #FFFFFF; }
+
+/* Display */
+.display-block { display: block; }
+.display-flex { display: flex; }
+
+/* Fonts */
+h1 { font-size: 5rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3.5rem; }
+h4 { font-size: 2.8rem; }
+h5 { font-size: 2rem; }
+h6 { font-size: 1.6rem; }
+p { font-size: 1.3rem; }
+
+/* Margin - Padding */
+.left-auto { margin-left: auto; }
