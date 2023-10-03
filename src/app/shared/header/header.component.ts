@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2, ElementRef } from '@angular/core';
 
 // Interfaces
 import { Items } from '../interfaces/interfaces';
@@ -16,5 +16,18 @@ export class HeaderComponent {
     { title: 'Ubicanos', link: '' },
     { title: 'Contactanos', link: '' }
   ];
+
+  constructor( 
+    private elRef   : ElementRef,
+    private renderer: Renderer2
+  ) {}
+
+  closeSideMenu() {
+    const offcanvas = this.elRef.nativeElement.querySelector('#navbarNav');
+    this.renderer.removeClass(offcanvas, 'show'); 
+
+    const backdrop = document.querySelector('.offcanvas-backdrop');
+    if ( backdrop ) { backdrop.remove(); }
+  }
 
 }
