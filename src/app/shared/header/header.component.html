@@ -1,15 +1,30 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
+
+    <!--Logo and title -->
     <div class="display-flex">
       <div class="logo">
         <img src="../../../assets/img/logos/transparent-logo-1.png">
       </div>
       <h6 class="light-blue-text fw-600">Autorepuestos H&N, C.A.</h6>
-    </div>    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+    </div>   
+    <!-- /Logo and title -->
+
+    <!-- Menu button --> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav">
+      <i class="fa-solid fa-bars"></i>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <!-- /Menu button --> 
+
+    <!-- Side menu -->
+    <div class="offcanvas offcanvas-start" id="navbarNav">
+      <div class="display-none">
+        <div>
+          <img src="../../../assets/img/logos/white-logo-1.png" class="side-menu-logo">
+          <h6 class="light-blue-text fw-600 white-text">Autorepuestos H&N, C.A.</h6>
+        </div>
+        <i class="fa-solid fa-xmark left-auto white-text"></i>
+      </div>
       <ul class="navbar-nav">
         <li class="nav-item" *ngFor="let item of navItems">
           <a class="nav-link light-blue-text fw-600">{{ item.title }}</a>
@@ -17,5 +32,7 @@
         <a class="catalog-button light-blue white-text" routerLink="/home/catalog">Catálogo</a>
       </ul>
     </div>
+    <!-- /Side menu -->
+
   </div>
 </nav>
