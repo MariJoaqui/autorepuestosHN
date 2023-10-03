@@ -8,6 +8,12 @@
 .dark-yellow { background: #F5AC17; }
 .white { background: #FFFFFF; }
 
+.black-text { color: #000000; }
+.dark-blue-text { color: #1B345B; }
+.light-blue-text { color: #125694; }
+.dark-yellow-text { color: #F5AC17; }
+.white-text { color: #FFFFFF; }
+
 /* Display */
 .display-block { display: block; }
 .display-flex { display: flex; }
@@ -20,6 +26,9 @@ h4 { font-size: 2.8rem; }
 h5 { font-size: 2rem; }
 h6 { font-size: 1.6rem; }
 p { font-size: 1.3rem; }
+
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
 
 /* Margin - Padding */
 .left-auto { margin-left: auto; }
